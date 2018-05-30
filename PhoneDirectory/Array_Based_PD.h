@@ -56,9 +56,10 @@ private:
 	class Directory_Entry
 	{
 	public:
-		Directory_Entry() {} // Default no-argument constructor 
-		Directory_Entry(std::string the_name, std::string the_number): name(name),number(number) {}
-		
+		Directory_Entry():name(""), number(""){} // Default no-argument constructor 
+		Directory_Entry(const std::string name,  const std::string number): name(name),number(number) {
+			
+		}
 		
 		std::string get_name() const {
 			return name; 
@@ -68,6 +69,9 @@ private:
 		}
 		void set_number(const std::string& new_number) {
 			number = new_number; 
+		}
+		void set_name(const std::string& new_name) {
+			name = new_name; 
 		}
 	private:
 		std::string name; 
