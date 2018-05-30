@@ -90,6 +90,7 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please com
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
+	///// Completed By Jesse Domingo
 	string s = the_directory.remove_entry(name);
 	
 }

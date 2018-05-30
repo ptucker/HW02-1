@@ -115,6 +115,7 @@ void Phone_Directory::save()
 	*/
 string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please complete the remove_entry() method - Ed/Kent
 {
+	///// Completed By Jesse Domingo
 	int index = find(name); 
 	if (index == -1)
 	{

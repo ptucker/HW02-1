@@ -54,10 +54,11 @@ public:
 
 private:
 	class Directory_Entry
+		/// Completed By Jesse Domingo
 	{
 	public:
 		Directory_Entry():name(""), number(""){} // Default no-argument constructor 
-		Directory_Entry(const std::string name,  const std::string number): name(name),number(number) {
+		Directory_Entry(const std::string the_name,  const std::string the_number): name(the_name),number(the_number) {
 			
 		}
 		
