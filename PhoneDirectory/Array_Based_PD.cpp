@@ -123,6 +123,8 @@ string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please
 	}
 	else
 	{
+		//PT -- This works, but there's a faster way to do it. You don't need to allocate a new array
+		//      and copy everything over. Instead you can just "shift" the items using the hint given below.
 		the_directory[index].set_name("NULL"); 
 		modified = true; 
 		Directory_Entry * new_directory = new 
