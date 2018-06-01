@@ -92,6 +92,10 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please com
 	getline(cin, name);
 	// Complete the rest of this function 
 	
+	string name;
+	cout << "Enter name: ";
+	getline(cin, name);
+	string s = the_directory.remove_entry(name);
 }
 
 void do_save(Phone_Directory& the_directory)
